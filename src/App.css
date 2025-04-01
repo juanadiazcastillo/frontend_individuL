@@ -1,0 +1,26 @@
+
+
+.color-navbar {
+  background: #1a2a6c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.color-texto-marca {
+  color: #1e3d87 !important;
+}
+.btns{
+  color: hsl(101, 88%, 23%);
+  width: 200px;
+  border-radius: 20px;
+}
+.titulo{
+  color: rgb(124, 70, 8);
+}
+.sub{
+  color: #b37707;
+}
+.margen-superior-main{
+  margin-top: 60px;
+}
