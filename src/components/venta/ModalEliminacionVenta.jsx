@@ -6,6 +6,7 @@ const ModalEliminacionVenta = ({
   mostrarModalEliminacion,
   setMostrarModalEliminacion,
   eliminarVenta,
+  
 }) => {
   return (
     <Modal show={mostrarModalEliminacion} onHide={() => setMostrarModalEliminacion(false)}>
