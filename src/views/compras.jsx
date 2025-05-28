@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import TablaCompras from '../components/Compras/TablaCompras';
-import ModalActualizacionCompra from '../components/Compras/ModalActualizacionCompra';
-import ModalDetallesCompra from '../components/detalles_Compra/ModalDetallesCompra';
-import ModalEliminacionCompra from '../components/Compras/ModalEliminacionCompra';
-import ModalRegistroCompra from '../components/Compras/ModalRegistroCompra';
+import TablaCompras from '../components/compra/TablaCompras';
+import ModalActualizacionCompra from '../components/compra/ModalActualizacionCompra';
+import ModalDetallesCompra from '../components/detalles_compras/ModalDetallesCompra';
+import ModalEliminacionCompra from '../components/compra/ModalEliminacionCompra';
+import ModalRegistroCompra from '../components/compra/ModalRegistroCompra';
 import { Container, Button, Row, Col } from 'react-bootstrap';
 
 const Compras = () => {

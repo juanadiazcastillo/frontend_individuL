@@ -1,3 +1,5 @@
+//ModalDetallesCompra.jsx
+
 import React from 'react';
 import { Modal, Table, Button } from 'react-bootstrap';
 

@@ -1,45 +1,35 @@
+
 // ModalRegistroCategoria.jsx
 import React from "react";
 import { Modal, Form, Button } from "react-bootstrap";
 
-const ModalRegistroCategoria = ({
+const ModalRegistroCliente = ({
   mostrarModal,
   setMostrarModal,
-  nuevaCategoria,
+  nuevoCliente,
   manejarCambioInput,
-  agregarCategoria,
+  agregarCliente,
   errorCarga,
 }) => {
   return (
     <Modal show={mostrarModal} onHide={() => setMostrarModal(false)}>
       <Modal.Header closeButton>
-        <Modal.Title>Agregar Nueva Categoría</Modal.Title>
+        <Modal.Title>Agregar Nuevo Cliente</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form>
           <Form.Group className="mb-3" controlId="formNombreCategoria">
-            <Form.Label>Nombre de la Categoría</Form.Label>
+            <Form.Label>Nombre del cliente</Form.Label>
             <Form.Control
               type="text"
-              name="nombre_categoria"
-              value={nuevaCategoria.nombre_categoria}
+              name="primer_nombre"
+              value={nuevoCliente.primer_nombre}
               onChange={manejarCambioInput}
               placeholder="Ingresa el nombre (máx. 20 caracteres)"
               maxLength={20}
               required
             />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formDescripcionCategoria">
-            <Form.Label>Descripción</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows={3}
-              name="descripcion_categoria"
-              value={nuevaCategoria.descripcion_categoria}
-              onChange={manejarCambioInput}
-              placeholder="Ingresa la descripción (máx. 100 caracteres)"
-              maxLength={100}
-            />
+         
           </Form.Group>
           {errorCarga && (
             <div className="text-danger mt-2">{errorCarga}</div>
@@ -52,12 +42,12 @@ const ModalRegistroCategoria = ({
         }}>
           Cancelar
         </Button>
-        <Button variant="primary" onClick={agregarCategoria}>
-          Guardar Categoría
+        <Button variant="primary" onClick={agregarCliente}>
+          Guardar Cliente
         </Button>
       </Modal.Footer>
     </Modal>
   );
 };
 
-export default ModalRegistroCategoria;
+export default ModalRegistroCliente;

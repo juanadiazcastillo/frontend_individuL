@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import TablaCategorias from '../components/categorias/TablaCategorias'; // Importa el componente de tabla
 import { Container, Button, Row, Col } from "react-bootstrap";
-import CuadroBusquedas from "../components/busquedas/CuadroBuscadas"
+import CuadroBusquedas from "../components/busquedas/CuadroBusquedas"
 import ModalRegistroCategoria from '../components/categorias/ModalRegistroCategoria';
 import ModalEliminacionCategoria from '../components/categorias/ModalEliminacionCategoria';
 import ModalEdicionCategoria from '../components/categorias/ModalActualizacionCategoria';
@@ -214,7 +214,7 @@ const categoriasPaginadas = categoriasFiltradas.slice(
           elementosPorPagina={elementosPorPagina} // Elementos por página
           paginaActual={paginaActual} // Página actual
           establecerPaginaActual={establecerPaginaActual} // Método para cambiar página
-          abrirModalEliminacion={abrirModalEliminacion} // Método para abrir modal de eliminación
+          abrirModalEliminacionn={abrirModalEliminacion} // Método para abrir modal de eliminación
           abrirModalEdicion={abrirModalEdicion} // Método para abrir modal de edición
         />
 

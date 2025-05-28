@@ -1,3 +1,5 @@
+//TablaCompras.jsx
+
 import React from 'react';
 import { Table, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,21 +11,21 @@ const TablaCompras = ({ compras, cargando, error, obtenerDetalles, abrirModalEli
   return (
     <Table striped bordered hover responsive>
       <thead>
-        <tr>
-          <th>ID Compra</th>
-          <th>Fecha Compra</th>
-          <th>Empleado</th>
-          <th>Total</th>
-          <th>Acciones</th>
-        </tr>
-      </thead>
-      <tbody>
-        {compras.map((compra) => (
-          <tr key={`${compra.id_compra}`}>
-            <td>{compra.id_compra}</td>
-            <td>{compra.fecha_compra}</td>
-            <td>{compra.nombre_empleado}</td>
-            <td>C$ {compra.total_compra}</td>
+          <tr>
+            <th>ID Compra</th>
+            <th>Fecha Compra</th>
+            <th>Empleado</th>
+            <th>Total</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          {compras.map((compra) => (
+            <tr key={`${compra.id_compra}`}>
+              <td>{compra.id_compra}</td>
+              <td>{compra.fecha_compra}</td>
+              <td>{compra.nombre_empleado}</td>
+              <td>C$ {compra.total_compra}</td>
             <td>
               <Button
                 variant="outline-success"
@@ -57,6 +59,3 @@ const TablaCompras = ({ compras, cargando, error, obtenerDetalles, abrirModalEli
 };
 
 export default TablaCompras;
-
-
-

@@ -8,10 +8,10 @@
 }
 
 .color-texto-marca {
-  color: #1e3d87 !important;
+  color: #66af66 !important;
 }
 .btns{
-  color: hsl(101, 88%, 23%);
+  color: hsl(180, 88%, 23%);
   width: 200px;
   border-radius: 20px;
 }
@@ -24,3 +24,18 @@
 .margen-superior-main{
   margin-top: 60px;
 }
+
+.eliminar{
+ background-color: #b21f1f;
+}
+
+.titulo-blanco .dropdown-toggle {
+  color: white !important;
+  font-weight: bold;
+}
+
+.titulo-negro .dropdown-toggle {
+  color: rgb(0, 0, 0) !important;
+  font-weight: bold;
+}
+

@@ -13,7 +13,7 @@ const TablaCategorias = ({
    elementosPorPagina,
    paginaActual,
    establecerPaginaActual,
-   abrirModalEliminacion,
+   abrirModalEliminacionn,
    abrirModalEdicion
    }) => {
   // Renderizado condicional según el estado recibido por props
@@ -56,7 +56,7 @@ const TablaCategorias = ({
                 <Button
                   variant="outline-danger"
                   size="sm"
-                  onClick={() => abrirModalEliminacion(categoria)}
+                  onClick={() => abrirModalEliminacionn(categoria)}
                 >
                   <i className="bi bi-trash"></i>
                 </Button>
